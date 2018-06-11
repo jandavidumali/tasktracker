@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- jQuery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- CSS Files -->
+<link rel="stylesheet" href="../../css/tasktracker.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- JS Files -->
+<script src="../../js/tasktracker-index.js" type="text/javascript"></script>
+<title>TaskTracker</title>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+	<a href="#home" class="active">Home</a>
+	<a href="#news">News</a>
+	<a href="#contact">Contact</a>
+	<a href="#about">About</a>
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	<i class="fa fa-bars"></i>
+	</a>
+</div>
+<div class="row">
+	<div class="col-4 col-s-12"></div>
+	<div class="col-4 col-s-12">
+		<!-- Menu -->
+		<div class="menu-index" id="menu-index">
+		    <h1>TaskTracker</h1>
+		    <p>A personal web project that will allow the user to track multiple tasks in different projects.</p>
+		    <p>Join TaskTracker and track all your projects!</p>
+		    <div class="row">
+		    	<div class="col-2 col-s-2"></div>
+		    	<div class="col-4 col-s-4">
+		    		<button type="submit" class="button" name="register" id="register">Register</button>
+		    	</div>
+		    	<div class="col-4 col-s-4">
+		    		<button type="submit" class="button" name="login" id="login">Log In</button>
+		    	</div>
+		    	<div class="col-2 col-s-2"></div>
+		    </div>
+	    </div>
+	    <!-- Register -->
+	    <div class="menu-index hidden" id="register-index">
+		    <p>Sample.</p>
+		    <form method="post" action="">
+		    	<label for="fname">First Name:</label>
+		    	<input type="text" id="fname" name="fname" class="input-register-text">
+		    	<br>
+		    	<label for="lname">Last Name:</label>
+		    	<input type="text" id="lname" name="lname" class="input-register-text">
+			    <div class="row">
+			    	<div class="col-2"></div>
+			    	<div class="col-4">
+			    		<button type="submit" class="button" name="registerSubmit" id="registerSubmit">Register</button>
+			    	</div>
+			    	<div class="col-4">
+			    		<button type="button" class="button" name="registerCancel" id="registerCancel">Cancel</button>
+			    	</div>
+			    	<div class="col-2"></div>
+			    </div>
+		    </form>
+	    </div>
+	    <!-- Log In -->
+	    <div class="log-in-index">
+		    
+	    </div>
+    </div>
+	<div class="col-4 col-s-12"></div>
+</div>
+</body>
+</html>

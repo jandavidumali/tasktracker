@@ -2,7 +2,7 @@
  * This file contains all scripts used in index.html
  */
 
-function myFunction() {
+function dropdownNav() {
 	/* Responsive Navigation Bar */
 	/* Turns the navigation bar to bars if screen is under 768px */
     var x = document.getElementById("myTopnav");

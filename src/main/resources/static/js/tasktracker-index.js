@@ -38,6 +38,13 @@ $(document).ready(function () {
         	
         	function complete(){
         		$("#menu-index").fadeIn("slow");
+        		
+        		/* Remove all error messages from the register form */
+        		$('#errorRequiredFname').addClass('hidden');
+        		$('#errorRequiredLname').addClass('hidden');
+        		$('#errorRequiredEaddress').addClass('hidden');
+        		$('#errorRequiredPword').addClass('hidden');
+        		$('#errorRequiredRepeatPword').addClass('hidden');
         		registerActive = false;
         	}
         	
@@ -45,4 +52,42 @@ $(document).ready(function () {
         }
     });
     /* Menu and Register Index Animation */
+    /* Register Form jQuery Validation */
+    $('#register-form').submit(function(e){
+    	var error = false;
+    	var firstName = $('#fname').val();
+    	var lastName = $('#lname').val();
+    	var emailAddress = $('#eaddress').val();
+    	var password = $('#pword').val();
+    	var repeatPassword = $('#repeatpword').val();
+    	
+    	if(!firstName){
+    		$('#errorRequiredFname').removeClass('hidden');
+    		error = true;
+    	}
+    	if(!lastName){
+    		$('#errorRequiredLname').removeClass('hidden');
+    		error = true;
+    	}
+    	if(!emailAddress){
+    		$('#errorRequiredEaddress').removeClass('hidden');
+    		error = true;
+    	}
+    	if(!password){
+    		$('#errorRequiredPword').removeClass('hidden');
+    		error = true;
+    	}
+    	if(!repeatPassword){
+    		$('#errorRequiredRepeatPword').removeClass('hidden');
+    		error = true;
+    	}
+    	
+    	if(error){
+    		e.preventDefault();
+    	}
+    	
+    	
+    });
+    /* Register Form jQuery Validation */
 });
+

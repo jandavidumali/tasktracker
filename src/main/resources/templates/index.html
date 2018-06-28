@@ -44,17 +44,50 @@
 		    	<div class="col-s-12 col-t-12 col-sp-12 col-lp-12"></div>
 		    </div>
 	    </div>
+	    <!-- Menu -->
 	    <!-- Register -->
 	    <div class="menu-index hidden" id="register-index">
-		    <p>Sample.</p>
-		    <form method="post" action="">
-		    <div class="form-group">
-		    	<label for="fname">First Name:</label>
-		    	<input type="text" id="fname" name="fname" class="input-register-text">
-		    	<label for="lname">Last Name:</label>
-		    	<input type="text" id="lname" name="lname" class="input-register-text">
-		    	<label for="eaddress">Email:</label>
-		    	<input type="email" id="eaddress" name="eaddress" class="input-register-text">
+	    	<h3>Register Form</h3>
+		    <p>Please fill all the fields before clicking the register button.</p>
+		    <!-- Form Inputs -->
+		    <form method="post" action="" id="register-form" name="register-form">
+		    <div class="row">
+		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
+		    		<label for="fname" id="register-form-label">First Name:</label>
+		    	</div>
+		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
+		    		<input type="text" id="fname" name="fname" class="input-register-text">
+		    		<p class="error-message hidden" id="errorRequiredFname">First Name field is required!</p>
+		    	</div>
+		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
+		    		<label for="lname" id="register-form-label">Last Name:</label>
+		    	</div>
+		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
+		    		<input type="text" id="lname" name="lname" class="input-register-text">
+		    		<p class="error-message hidden" id="errorRequiredLname">Last Name field is required!</p>
+		    	</div>
+		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
+		    		<label for="eaddress" id="register-form-label">Email:</label>
+		    	</div>
+		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
+		    		<input type="email" id="eaddress" name="eaddress" class="input-register-text">
+		    		<p class="error-message hidden" id="errorRequiredEaddress">Email field is required!</p>
+		    	</div>
+		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
+		    		<label for="password" id="register-form-label">Password:</label>
+		    	</div>
+		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
+		    		<input type="password" id="pword" name="pword" class="input-register-text">
+		    		<p class="error-message hidden" id="errorRequiredPword">Password field is required!</p>
+		    	</div>
+		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
+		    		<label for="repeatpword" id="register-form-label">Repeat Password:</label>
+		    	</div>
+		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
+		    		<input type="password" id="repeatpword" name="repeatpword" class="input-register-text">
+		    		<p class="error-message hidden" id="errorRequiredRepeatPword">Repeat Password field is required!</p>
+		    	</div>
+		    <!-- Form Inputs -->
 		    </div>
 			    <div class="row">
 			    	<div class="col-s-12 col-t-12 col-sp-12 col-lp-12"></div>
@@ -68,10 +101,12 @@
 			    </div>
 		    </form>
 	    </div>
+	    <!-- Register -->
 	    <!-- Log In -->
 	    <div class="log-in-index">
 		    
 	    </div>
+	    <!-- Log In -->
     </div>
 	<div class="col-s-12 col-t-12 col-sp-4 col-lp-4"></div>
 </div>

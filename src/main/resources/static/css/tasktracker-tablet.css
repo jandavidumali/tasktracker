@@ -120,7 +120,6 @@ body {
     opacity: 0;
     transition: all 0.8s
 }
-
 .button:active:after {
     padding: 0;
     margin: 0;
@@ -128,7 +127,7 @@ body {
     transition: 0s
 }
 .input-register-text {
-	width: 50%;
+	width: 100%;
     padding: 12px 12px;
     margin: 8px 0;
     box-sizing: border-box;
@@ -136,10 +135,6 @@ body {
     border-bottom: 2px solid #FFF;
     background: transparent;
     color: #FFF;
-}
-.input-register-text:focus {
-	outline:none;
-    border: 3px solid #FFF;
 }
 * {
     box-sizing: border-box;
@@ -156,12 +151,9 @@ body {
     float: left;
     padding: 15px;
 }
-.form-group{
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	text-align:right;
+#register-form-label {
+	float: right;
 }
-.form-group > *{
-	padding: 12px 12px;
-    margin: 8px 0;
+.error-message {
+	color: red;
 }

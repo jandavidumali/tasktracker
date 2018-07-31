@@ -26,8 +26,8 @@
 	</a>
 </div>
 <div class="row">
-	<div class="col-s-12 col-t-12 col-sp-4 col-lp-4"></div>
-	<div class="col-s-12 col-t-12 col-sp-4 col-lp-4">
+	<div class="col-s-12 col-t-12 col-sp-3 col-lp-4"></div>
+	<div class="col-s-12 col-t-12 col-sp-6 col-lp-4">
 		<!-- Menu -->
 		<div class="menu-index" id="menu-index">
 		    <h1>TaskTracker</h1>
@@ -53,40 +53,45 @@
 		    <form method="post" action="" id="register-form" name="register-form">
 		    <div class="row">
 		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
-		    		<label for="fname" id="register-form-label">First Name:</label>
+		    		<p id="register-form-label">First Name:</p>
 		    	</div>
 		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
 		    		<input type="text" id="fname" name="fname" class="input-register-text">
 		    		<p class="error-message hidden" id="errorRequiredFname">First Name field is required!</p>
 		    	</div>
 		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
-		    		<label for="lname" id="register-form-label">Last Name:</label>
+					<p id="register-form-label">Last Name:</p>
 		    	</div>
 		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
 		    		<input type="text" id="lname" name="lname" class="input-register-text">
 		    		<p class="error-message hidden" id="errorRequiredLname">Last Name field is required!</p>
 		    	</div>
 		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
-		    		<label for="eaddress" id="register-form-label">Email:</label>
+					<p id="register-form-label">Email:</p>
 		    	</div>
 		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
 		    		<input type="email" id="eaddress" name="eaddress" class="input-register-text">
 		    		<p class="error-message hidden" id="errorRequiredEaddress">Email field is required!</p>
 		    	</div>
 		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
-		    		<label for="password" id="register-form-label">Password:</label>
+					<p id="register-form-label">Password:</p>
 		    	</div>
 		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
 		    		<input type="password" id="pword" name="pword" class="input-register-text">
 		    		<p class="error-message hidden" id="errorRequiredPword">Password field is required!</p>
-		    	</div>
+		    		<p class="error-message hidden" id="errorMustContainPword">Password must contain 1 digit, uppercase and lowercase letters. Must not contain special characters</p>
+                    <p class="error-message hidden" id="errorMinimumPword">Password must be a minimum of 8 characters.</p>
+				</div>
 		    	<div class="col-s-3 col-t-4 col-sp-6 col-lp-5">
-		    		<label for="repeatpword" id="register-form-label">Repeat Password:</label>
+					<p id="register-form-label">Repeat Password:</p>
 		    	</div>
 		    	<div class="col-s-9 col-t-8 col-sp-6 col-lp-7">
 		    		<input type="password" id="repeatpword" name="repeatpword" class="input-register-text">
 		    		<p class="error-message hidden" id="errorRequiredRepeatPword">Repeat Password field is required!</p>
-		    	</div>
+					<p class="error-message hidden" id="errorNotSameRepeatPword">Repeat Password field is not the same with the password field!</p>
+                    <p class="error-message hidden" id="errorMustContainRepeatPword">Repeat Password must contain 1 digit, uppercase and lowercase letters. Must not contain special characters</p>
+                    <p class="error-message hidden" id="errorMinimumRepeatPword">Repeat Password must be a minimum of 8 characters.</p>
+                </div>
 		    <!-- Form Inputs -->
 		    </div>
 			    <div class="row">
@@ -108,7 +113,7 @@
 	    </div>
 	    <!-- Log In -->
     </div>
-	<div class="col-s-12 col-t-12 col-sp-4 col-lp-4"></div>
+	<div class="col-s-12 col-t-12 col-sp-3 col-lp-4"></div>
 </div>
 </body>
 </html>
